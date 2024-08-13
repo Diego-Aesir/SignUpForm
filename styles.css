@@ -1,0 +1,111 @@
+#main {
+    display: flex;
+    flex-direction: row;
+    --img_divider_height: 100vh;
+    --img_divider_width: 1010vw;
+
+
+    --logoBox_width: 49.2vw;
+    --logoBox_height: 100px;
+
+    --logoBoxTop: 34%;
+    --logoBoxLeft: 3%;
+    --logoBoxRight: 30%;
+
+    --signInMarginLeft: 30px;
+
+    font-family: 'LogoFont';
+}
+
+a {
+    color: white;
+}
+
+.imagePart {
+    width: var(--img_divider_width);
+    height: var(--img_divider_height);
+}
+
+.dividedImageScreen {
+    height: 100%;
+    width: 100%;
+}
+
+.signInLogoFaddedBox {
+    width: var(--logoBox_width);
+    height: var(--logoBox_height);
+    position: absolute;
+    
+    /* PAREI AQUI */
+    /* BOX TA DANDO RESIZE ERRADO, VERIFICAR MAIS CEDO PARA CORRIGIR MAIS FACILMENTE */
+    top: var(--logoBoxTop);
+
+    background-color: black;
+    opacity: 0.15;
+}
+
+.logoAndTextSignIn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: var(--logoBoxTop);
+    right: var(--logoBoxRight);
+    left: var(--logoBoxLeft);
+}
+
+@font-face {
+    font-family: 'LogoFont';
+    src: url('fonts/Norse-Bold.otf');
+}
+
+.logoAndTextSignIn .logoTxt {
+    font-family: 'LogoFont';
+    color: rgb(121, 3, 3);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.logoAndTextSignIn .logoImg {
+    height: 15%;
+    width: 15%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.signIn {
+    height: var(--img_divider_height);
+    width: var(--img_divider_width);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(81.2, 16.1, 23.9, 0.880);
+    color: white;
+}
+
+.signIn .descriptionTxt {
+    margin-top: 200px;
+    margin-left: var(--signInMarginLeft);
+}
+
+.signIn .signInForm {
+    margin-left: var(--signInMarginLeft);
+}
+
+.signIn .signInForm #form {
+   
+}
+
+#form .layoutForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#form .layoutForm .inputDiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.inputDiv .inputForm {
+    margin-right: 100px;
+}
