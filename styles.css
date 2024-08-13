@@ -99,3 +99,23 @@ a {
 .inputDiv .inputForm {
     margin-right: 100px;
 }
+/* Parei aqui nas labels */
+#passwordLabel {
+    border: 2px solid #000;
+}
+
+#passwordLabel:invalid {
+    border-color: red;
+}
+
+#confirmPasswordLabel:invalid {
+    border-color: red;
+}
+
+#sendForm {
+    margin-top: 10px;
+}
+
+.haveAccount {
+    margin-left: var(--signInMarginLeft);
+}

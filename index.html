@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <title>Sign up</title>
 </head>
 <body>
@@ -18,9 +19,8 @@
         <div class="signIn">
             <div class="descriptionTxt"> <h1> Crie sua dieta, de maneira rapida e facil! </h1></div>
             <div class="signInForm">
-                 <form id="form">
+                <form id="form" method="post">
                     <div class="layoutForm">  
-
                         <div class="inputDiv">
                             <div class="inputForm">
                                 <label for="firstNameLabel"> PRIMEIRO NOME: </label>
@@ -38,22 +38,33 @@
                             <div class="inputForm">
                                 <label for="emailLabel"> Email: </label>
                                 <br>
-                                <input id="emailLabel" type="email">
+                                <input id="emailLabel" type="email" placeholder="myemail@email.com">
                             </div>
                             <div>
                                 <label for="phoneNumberLabel"> Phone Number:</label>
                                 <br>
-                                <input id="phoneNumberLabel" type="number">
+                                <input id="phoneNumberLabel" type="number" placeholder="+55 92 1234-5678">
+                            </div>
+                        </div>
+
+                        <div class="inputDiv">
+                            <div class="inputForm">
+                                <label for="passwordLabel"> Password: </label>
+                                <br>
+                                <input id="passwordLabel" type="text">
+                            </div>
+                            <div>
+                                <label for="confirmPasswordLabel"> Confirm Password:</label>
+                                <br>
+                                <input id="confirmPasswordLabel" type="text">
                             </div>
                         </div>
                     </div>
+                    <button id="sendForm"> Create Account </button>
                 </form>
             </div>
             <div>
-                <button> Create Account </button>
-            </div>
-            <div>
-                <p> Already have an account? <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form" target="_self"> Log in</a></p>
+                <p class="haveAccount"> Already have an account? <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form" target="_self"> Log in</a></p>
             </div>
         </div>
     </div>
