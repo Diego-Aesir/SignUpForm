@@ -5,12 +5,11 @@
     --img_divider_width: 1010vw;
 
 
-    --logoBox_width: 49.2vw;
-    --logoBox_height: 100px;
+    --logoBox_width: 48vw;
+    --logoBox_height: 130px;
 
     --logoBoxTop: 34%;
-    --logoBoxLeft: 3%;
-    --logoBoxRight: 30%;
+    --logoBoxLeft: 1vw;
 
     --signInMarginLeft: 30px;
 
@@ -32,26 +31,23 @@ a {
 }
 
 .signInLogoFaddedBox {
+    display: flex;
     width: var(--logoBox_width);
     height: var(--logoBox_height);
     position: absolute;
-    
-    /* PAREI AQUI */
-    /* BOX TA DANDO RESIZE ERRADO, VERIFICAR MAIS CEDO PARA CORRIGIR MAIS FACILMENTE */
     top: var(--logoBoxTop);
-
-    background-color: black;
-    opacity: 0.15;
+    left: var(--logoBoxLeft);
+    background-color: rgba(3, 3, 3, 0.185);
+    align-content: center;
 }
 
-.logoAndTextSignIn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    top: var(--logoBoxTop);
-    right: var(--logoBoxRight);
-    left: var(--logoBoxLeft);
+.logoImg {
+    height: 100px;
+    width: 15%;
+    margin-top: 10px;
+    margin-left: 14vw;
+    margin-right: 10px;
+    color: white;
 }
 
 @font-face {
@@ -59,18 +55,12 @@ a {
     src: url('fonts/Norse-Bold.otf');
 }
 
-.logoAndTextSignIn .logoTxt {
+.logoTxt {
+    margin-top: 40px;
     font-family: 'LogoFont';
     color: rgb(121, 3, 3);
     font-size: xx-large;
-    font-weight: bolder;
-}
-
-.logoAndTextSignIn .logoImg {
-    height: 15%;
-    width: 15%;
-    margin-top: 10px;
-    margin-right: 10px;
+    font-weight: bolder;    
 }
 
 .signIn {
