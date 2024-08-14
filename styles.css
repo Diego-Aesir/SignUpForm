@@ -99,17 +99,23 @@ a {
 .inputDiv .inputForm {
     margin-right: 100px;
 }
-/* Parei aqui nas labels */
-#passwordLabel {
-    border: 2px solid #000;
+
+[id$="Label"] {
+    border: 2px solid #00000046;
+    border-radius: 5%;
+    border-style: groove;
 }
 
-#passwordLabel:invalid {
+[class$="valid"] {
+    border-color: green;
+}
+
+[class$="invalid"] {
     border-color: red;
 }
 
-#confirmPasswordLabel:invalid {
-    border-color: red;
+.disabled {
+    opacity: 1%;
 }
 
 #sendForm {
